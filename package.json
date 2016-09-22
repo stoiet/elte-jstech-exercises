@@ -4,7 +4,8 @@
   "description": "ELTE JavaScript Technologies Exercises",
   "scripts": {
     "exercise00": "mocha exercise00/*.js --opts .mocharc",
-    "exercise01": "mocha exercise01/*.js --opts .mocharc"
+    "exercise01": "mocha exercise01/*.js --opts .mocharc",
+    "exercise02": "mocha exercise02/*.js --opts .mocharc"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
     "core-js": "2.4.1",
     "lodash": "4.16.1",
     "mocha": "3.0.2",
-    "sinon": "1.17.6"
+    "sinon": "1.17.6",
+    "sinon-chai": "2.8.0"
   }
 }
