@@ -5,7 +5,8 @@
   "scripts": {
     "exercise00": "mocha exercise00/*.js --opts .mocharc",
     "exercise01": "mocha exercise01/*.js --opts .mocharc",
-    "exercise02": "mocha exercise02/*.js --opts .mocharc"
+    "exercise02": "mocha exercise02/*.js --opts .mocharc",
+    "exercise03": "mocha exercise03/*.js --opts .mocharc"
   },
   "repository": {
     "type": "git",
