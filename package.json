@@ -1,0 +1,26 @@
+{
+  "name": "elte-jstech-exercises",
+  "version": "1.0.0",
+  "description": "ELTE JavaScript Technologies Exercises",
+  "scripts": {
+    "exercise00": "mocha exercise00 --opts .mocharc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stoiet/elte-jstech-exercises.git"
+  },
+  "author": "stoiet",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/stoiet/elte-jstech-exercises/issues"
+  },
+  "homepage": "https://github.com/stoiet/elte-jstech-exercises#readme",
+  "dependencies": {
+    "babel-core": "6.14.0",
+    "babel-preset-latest": "6.14.0",
+    "chai": "3.5.0",
+    "core-js": "2.4.1",
+    "mocha": "3.0.2",
+    "sinon": "1.17.6"
+  }
+}
