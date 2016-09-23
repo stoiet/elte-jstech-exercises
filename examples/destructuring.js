@@ -11,7 +11,7 @@ const { deepValues: { first } } = nestedObject;
 console.log(first);
 
 
-const largeArray = [...Array(100000).keys()];
+const largeArray = Array(100000).keys();
 const [head, ...last] = largeArray;
 console.log(head);
 
