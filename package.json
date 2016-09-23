@@ -8,7 +8,8 @@
     "exercise01": "mocha exercise01/*.js --opts .mocharc",
     "exercise02": "mocha exercise02/*.js --opts .mocharc",
     "exercise03": "mocha exercise03/*.js --opts .mocharc",
-    "exercise04": "mocha exercise04/*.js --opts .mocharc"
+    "exercise04": "mocha exercise04/*.js --opts .mocharc",
+    "exercise05": "mocha exercise05/*.js --opts .mocharc"
   },
   "repository": {
     "type": "git",
