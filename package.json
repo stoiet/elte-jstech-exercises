@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "ELTE JavaScript Technologies Exercises",
   "scripts": {
+    "example": "babel-node --presets latest",
     "exercise00": "mocha exercise00/*.js --opts .mocharc",
     "exercise01": "mocha exercise01/*.js --opts .mocharc",
     "exercise02": "mocha exercise02/*.js --opts .mocharc",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/stoiet/elte-jstech-exercises#readme",
   "dependencies": {
+    "babel-cli": "6.14.0",
     "babel-core": "6.14.0",
     "babel-preset-latest": "6.14.0",
     "chai": "3.5.0",
