@@ -12,7 +12,8 @@
     "exercise05": "mocha exercise05/*.js --opts .mocharc",
     "exercise06": "babel-node --presets latest ./exercise06/*.js",
     "exercise07": "babel-node --presets latest ./exercise07/*.js",
-    "exercise08": "mocha exercise08/*.js --opts .mocharc"
+    "exercise08": "mocha exercise08/*.js --opts .mocharc",
+    "exercise09": "mocha exercise09/*.js --opts .mocharc --require co-mocha"
   },
   "repository": {
     "type": "git",
