@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "ELTE JavaScript Technologies Exercises",
   "scripts": {
+    "clean": "rm -rf dist/*",
     "example": "babel-node --presets latest",
     "exercise00": "mocha exercise00/*.js --opts .mocharc",
     "exercise01": "mocha exercise01/*.js --opts .mocharc",
@@ -13,7 +14,8 @@
     "exercise06": "babel-node --presets latest ./exercise06/*.js",
     "exercise07": "babel-node --presets latest ./exercise07/*.js",
     "exercise08": "mocha exercise08/*.js --opts .mocharc",
-    "exercise09": "mocha exercise09/*.js --opts .mocharc --require co-mocha"
+    "exercise09": "mocha exercise09/*.js --opts .mocharc --require co-mocha",
+    "exercise10": "npm run clean && cp exercise10/index.html dist/ && webpack --config exercise10/webpack.config.js --watch"
   },
   "repository": {
     "type": "git",
@@ -26,16 +28,22 @@
   },
   "homepage": "https://github.com/stoiet/elte-jstech-exercises#readme",
   "dependencies": {
-    "babel-cli": "6.14.0",
-    "babel-core": "6.14.0",
+    "babel-cli": "6.16.0",
+    "babel-core": "6.17.0",
+    "babel-loader": "6.2.5",
     "babel-polyfill": "6.16.0",
-    "babel-preset-latest": "6.14.0",
+    "babel-preset-latest": "6.16.0",
+    "babel-preset-react": "6.16.0",
     "chai": "3.5.0",
     "co-mocha": "1.1.3",
     "core-js": "2.4.1",
-    "lodash": "4.16.1",
-    "mocha": "3.0.2",
+    "json-loader": "0.5.4",
+    "lodash": "4.16.4",
+    "mocha": "3.1.2",
+    "react": "15.3.2",
+    "react-dom": "15.3.2",
     "sinon": "1.17.6",
-    "sinon-chai": "2.8.0"
+    "sinon-chai": "2.8.0",
+    "webpack": "1.13.2"
   }
 }
