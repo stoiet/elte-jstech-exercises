@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "ELTE JavaScript Technologies Exercises",
   "scripts": {
-    "clean": "rm -rf dist/*",
+    "clean": "rm -rf dist/* 2> /dev/null",
+    "create-dist": "test -d dist/ || mkdir -p dist/",
     "example": "babel-node --presets latest",
     "exercise00": "mocha exercise00/*.js --opts .mocharc",
     "exercise01": "mocha exercise01/*.js --opts .mocharc",
@@ -15,7 +16,8 @@
     "exercise07": "babel-node --presets latest ./exercise07/*.js",
     "exercise08": "mocha exercise08/*.js --opts .mocharc",
     "exercise09": "mocha exercise09/*.js --opts .mocharc --require co-mocha",
-    "exercise10": "npm run clean && cp exercise10/index.html dist/ && webpack --config exercise10/webpack.config.js --watch"
+    "exercise10": "npm run clean && npm run create-dist && cp exercise10/index.html dist/ && webpack --config exercise10/webpack.config.js --watch",
+    "exercise11": "npm run clean && npm run create-dist && cp exercise11/index.html dist/ && webpack --config exercise11/webpack.config.js --watch"
   },
   "repository": {
     "type": "git",
