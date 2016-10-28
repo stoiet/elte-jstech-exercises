@@ -1,0 +1,13 @@
+.link-item {
+  padding: 5px;
+}
+
+.link-item__left {
+  padding-right: 10px;
+  float: left;
+}
+
+.link-item__name {
+  padding-right: 10px;
+  vertical-align: middle;
+}

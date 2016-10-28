@@ -18,7 +18,8 @@
     "exercise08": "mocha exercise08/*.js --opts .mocharc",
     "exercise09": "mocha exercise09/*.js --opts .mocharc --require co-mocha",
     "exercise10": "npm run prebundle && cp exercise10/index.html dist/ && webpack --config exercise10/webpack.config.js --watch",
-    "exercise11": "npm run prebundle && cp exercise11/index.html dist/ && webpack --config exercise11/webpack.config.js --watch"
+    "exercise11": "npm run prebundle && cp exercise11/index.html dist/ && webpack --config exercise11/webpack.config.js --watch",
+    "exercise12": "npm run prebundle && cp exercise12/index.html dist/ && webpack --config exercise12/webpack.config.js --watch"
   },
   "repository": {
     "type": "git",
