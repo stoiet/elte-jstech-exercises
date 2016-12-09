@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Exercise #15</title>
+    <meta name="description" content="Exercise #15">
+    <meta name="author" content="stoiet">
+    <link href="<%= `//${clientHost}:${clientPort}/application.css` %>" rel="stylesheet">
+    <script>
+      window.config = { token: '<%= token %>' };
+    </script>
+  </head>
+
+  <body>
+    <div id="application">
+      <application></application>
+    </div>
+    <script src="<%= `//${clientHost}:${clientPort}/vendor.bundle.js` %>"></script>
+    <script src="<%= `//${clientHost}:${clientPort}/application.bundle.js` %>"></script>
+  </body>
+
+</html>

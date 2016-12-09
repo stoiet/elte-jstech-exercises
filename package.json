@@ -21,7 +21,10 @@
     "exercise11": "npm run prebundle && cp exercise11/index.html dist/ && webpack --config exercise11/webpack.config.js --watch",
     "exercise12": "npm run prebundle && cp exercise12/index.html dist/ && webpack --config exercise12/webpack.config.js --watch",
     "exercise13": "nodemon --watch exercise13 exercise13/index.js",
-    "exercise14": "nodemon --watch exercise14 exercise14/index.js"
+    "exercise14": "nodemon --watch exercise14 exercise14/index.js",
+    "exercise15-client-build": "npm run prebundle && webpack --config exercise15/client/webpack.config.js --watch",
+    "exercise15-client-server": "node exercise15/client-server.js",
+    "exercise15-server": "nodemon --watch exercise15/server exercise15/server/index.js"
   },
   "repository": {
     "type": "git",
@@ -34,6 +37,7 @@
   },
   "homepage": "https://github.com/stoiet/elte-jstech-exercises#readme",
   "dependencies": {
+    "angular": "1.6.0",
     "babel-cli": "6.16.0",
     "babel-core": "6.17.0",
     "babel-loader": "6.2.5",
@@ -54,9 +58,12 @@
     "json-loader": "0.5.4",
     "jsonwebtoken": "7.1.9",
     "koa": "1.2.4",
+    "koa-bodyparser": "2.3.0",
     "koa-router": "5.4.0",
+    "koa-views": "4.1.0",
     "lodash": "4.16.4",
     "mocha": "3.1.2",
+    "mongodb": "2.2.14",
     "nodemon": "1.11.0",
     "react": "15.3.2",
     "react-dom": "15.3.2",
@@ -64,6 +71,7 @@
     "redux": "3.6.0",
     "sinon": "1.17.6",
     "sinon-chai": "2.8.0",
+    "static-server": "2.0.3",
     "style-loader": "0.13.1",
     "webpack": "1.13.2"
   }
