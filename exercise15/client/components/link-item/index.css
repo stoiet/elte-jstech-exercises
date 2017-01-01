@@ -1,0 +1,8 @@
+.link-item {
+  padding: 5px;
+}
+
+.link-item__text {
+  padding-right: 10px;
+  float: left;
+}

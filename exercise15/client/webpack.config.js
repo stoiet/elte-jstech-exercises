@@ -4,7 +4,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = [{
   entry: {
     application: __dirname + '/index.js',
-    vendor: ['core-js/shim', 'angular', 'lodash']
+    vendor: ['core-js/shim', 'angular', 'lodash', 'cheerio']
   },
   output: {
     path: './dist',
@@ -16,7 +16,7 @@ module.exports = [{
     loaders: [
       { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader') },
       { test: /\.html$/, loader: 'html-loader', exclude: /node_modules/ },
-      { test: /\.json$/, loader: 'json-loader', exclude: /node_modules/ },
+      { test: /\.json$/, loader: 'json-loader' },
       { test: /\.js$/, loader: 'babel', exclude: /node_modules/ }
     ]
   },

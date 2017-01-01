@@ -8,7 +8,7 @@ export class SourceService {
 
   fetch() {
     this._$http
-      .get('/api/source', {  })
+      .get('/api/source')
       .then(({ data }) => this._sourceStore.setSource(data.source))
       .catch(() => this._sourceStore.setSource(''));
   }

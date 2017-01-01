@@ -2,7 +2,8 @@ import template from './index.html';
 
 export class SourceEditorComponent {
 
-  constructor(sourceStore) {
+  constructor($rootScope, sourceStore) {
+    this._$rootScope = $rootScope;
     this._sourceStore = sourceStore;
   }
 
@@ -12,11 +13,12 @@ export class SourceEditorComponent {
 
   setSource(source) {
     this._sourceStore.setSource(source);
+    this._$rootScope.$digest();
   }
 
   static create() {
     return {
-      controller: ['sourceStore', SourceEditorComponent],
+      controller: ['$rootScope', 'sourceStore', SourceEditorComponent],
       template
     };
   }

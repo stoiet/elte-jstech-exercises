@@ -1,5 +1,6 @@
 import angular from 'angular';
-import { ApplicationComponent, EditorComponent, SourceEditorComponent, SaveButtonComponent } from './components';
+import { ApplicationComponent, EditorComponent, SourceEditorComponent,
+  SaveButtonComponent, LinkListComponent, LinkItemComponent, SourceLinksComponent } from './components';
 import { SourceService } from './services';
 import { SourceStore } from './stores';
 
@@ -9,7 +10,10 @@ applicationModule
 
   .component('application', ApplicationComponent.create())
   .component('editor', EditorComponent.create())
+  .component('linkItem', LinkItemComponent.create())
+  .component('linkList', LinkListComponent.create())
   .component('saveButton', SaveButtonComponent.create())
+  .component('sourceLinks', SourceLinksComponent.create())
   .component('sourceEditor', SourceEditorComponent.create())
 
   .service('sourceService', SourceService.create())
