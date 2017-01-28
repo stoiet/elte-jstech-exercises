@@ -1,0 +1,18 @@
+{
+  "name": "elte-jstech-exercises",
+  "version": "1.0.0",
+  "description": "ELTE JavaScript Technologies Exercises",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stoiet/elte-jstech-exercises.git"
+  },
+  "author": "stoiet",
+  "private": true,
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/stoiet/elte-jstech-exercises/issues"
+  },
+  "homepage": "https://github.com/stoiet/elte-jstech-exercises#readme",
+  "dependencies": {}
+}
