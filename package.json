@@ -14,5 +14,9 @@
     "url": "https://github.com/stoiet/elte-jstech-exercises/issues"
   },
   "homepage": "https://github.com/stoiet/elte-jstech-exercises#readme",
-  "dependencies": {}
+  "dependencies": {
+    "@types/node": "7.0.4",
+    "tslint": "4.4.2",
+    "typescript": "2.1.5"
+  }
 }
