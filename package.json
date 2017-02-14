@@ -4,7 +4,7 @@
   "description": "ELTE JavaScript Technologies Exercises",
   "scripts": {
     "repl": "node repl/index.js",
-    "lession01/exercise01": "mocha lession01/exercise01/*.js --opts .mocharc"
+    "lesson01/exercise01": "mocha lesson01/exercise01/*.js --opts .mocharc"
   },
   "repository": {
     "type": "git",
