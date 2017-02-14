@@ -1,0 +1,7 @@
+--watch
+--compilers js:babel-core/register
+--bail
+--ui bdd
+--reporter min
+--colors
+--require babel-polyfill
