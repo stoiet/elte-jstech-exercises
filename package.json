@@ -6,7 +6,9 @@
     "repl": "node repl/index.js",
     "lesson01/exercise01": "mocha lesson01/exercise01/*.js --opts .mocharc",
     "lesson02/exercise01/tests": "mocha lesson02/exercise01/*.js --opts .mocharc",
-    "lesson02/exercise01/script": "babel-node lesson02/exercise01/index.js"
+    "lesson02/exercise01/script": "babel-node lesson02/exercise01/index.js",
+    "lesson02/exercise02/tests": "mocha lesson02/exercise02/*.js --opts .mocharc",
+    "lesson02/exercise02/script": "babel-node lesson02/exercise02/index.js"
   },
   "repository": {
     "type": "git",
