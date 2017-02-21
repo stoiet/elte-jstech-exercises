@@ -12,6 +12,12 @@ describe('#sortByField', () => {
   });
 
 
+  it('should sortByField return a function', () => {
+    expect(sortByField()).to.exist;
+    expect(sortByField()).to.instanceOf(Function);
+  });
+
+
   it('should return the original datas if invalid field name given', () => {
     const sortByUnknown = sortByField('unknown');
     expect(sortByUnknown(movies)).to.eql(movies);
