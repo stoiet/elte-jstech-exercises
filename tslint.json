@@ -9,8 +9,6 @@
     "no-construct": true,
     "no-duplicate-variable": true,
     "no-eval": true,
-    "no-null-keyword": true,
-    "no-shadowed-variable": true,
     "no-string-throw": true,
     "no-switch-case-fall-through": true,
     "no-unsafe-finally": true,

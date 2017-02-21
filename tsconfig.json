@@ -10,7 +10,8 @@
     "noEmit": true,
     "noEmitHelpers": true,
     "strictNullChecks": true,
-    "target": "es6"
+    "target": "es6",
+    "types": ["mocha", "chai", "chalk", "node"]
   },
   "include": ["**/*.js"],
   "exclude": ["node_modules"]

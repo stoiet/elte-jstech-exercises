@@ -4,7 +4,8 @@
   "description": "ELTE JavaScript Technologies Exercises",
   "scripts": {
     "repl": "node repl/index.js",
-    "lesson01/exercise01": "mocha lesson01/exercise01/*.js --opts .mocharc"
+    "lesson01/exercise01/tests": "mocha lesson01/exercise01/*.js --opts .mocharc",
+    "lesson02/exercise01/script": "babel-node lesson02/exercise01/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
     "@types/chalk": "0.4.31",
     "@types/mocha": "2.2.39",
     "@types/node": "7.0.4",
+    "babel-cli": "6.23.0",
     "babel-core": "6.23.1",
     "babel-polyfill": "6.23.0",
     "babel-preset-latest": "6.22.0",
