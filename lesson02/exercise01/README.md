@@ -13,6 +13,10 @@ Abban az esetben ha imdb mezovel hivtak meg, rendezze a filmeket csokkeno pontsz
 
 ### Tesztek futtatasa:
 ```bash
-npm run lession02/exercise01/script
-npm run lession02/exercise01/tests
+npm run lesson02/exercise01/tests
+```
+
+### Script futtatasa:
+```bash
+npm run lesson02/exercise01/script
 ```

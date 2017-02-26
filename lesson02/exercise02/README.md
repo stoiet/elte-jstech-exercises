@@ -5,6 +5,10 @@ helyere pedig a kulcsokat teszi. Figyelj arra, hogy az kulcsoknak string tipusun
 
 ### Tesztek futtatasa:
 ```bash
-npm run lession02/exercise02/script
-npm run lession02/exercise02/tests
+npm run lesson02/exercise02/tests
+```
+
+### Script futtatasa:
+```bash
+npm run lesson02/exercise02/script
 ```
