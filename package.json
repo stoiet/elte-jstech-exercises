@@ -8,7 +8,13 @@
     "lesson02/exercise01/tests": "mocha lesson02/exercise01/*.js --opts .mocharc",
     "lesson02/exercise01/script": "babel-node lesson02/exercise01/index.js",
     "lesson02/exercise02/tests": "mocha lesson02/exercise02/*.js --opts .mocharc",
-    "lesson02/exercise02/script": "babel-node lesson02/exercise02/index.js"
+    "lesson02/exercise02/script": "babel-node lesson02/exercise02/index.js",
+    "lesson03/exercise00/script": "babel-node lesson03/exercise00/index.js",
+    "lesson03/exercise01/script": "babel-node lesson03/exercise01/index.js",
+    "lesson03/exercise02/script": "babel-node lesson03/exercise02/index.js",
+    "lesson03/exercise03/script": "babel-node lesson03/exercise03/index.js",
+    "lesson03/exercise04/script": "babel-node lesson03/exercise04/index.js",
+    "lesson03/exercise04/tests": "mocha lesson03/exercise04/*.js --opts .mocharc"
   },
   "repository": {
     "type": "git",
