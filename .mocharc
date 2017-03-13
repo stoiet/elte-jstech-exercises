@@ -5,3 +5,4 @@
 --reporter min
 --colors
 --require babel-polyfill
+--timeout 6000

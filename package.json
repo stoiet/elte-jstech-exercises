@@ -14,7 +14,9 @@
     "lesson03/exercise02/script": "babel-node lesson03/exercise02/index.js",
     "lesson03/exercise03/script": "babel-node lesson03/exercise03/index.js",
     "lesson03/exercise04/script": "babel-node lesson03/exercise04/index.js",
-    "lesson03/exercise04/tests": "mocha lesson03/exercise04/*.js --opts .mocharc"
+    "lesson03/exercise04/tests": "mocha lesson03/exercise04/*.js --opts .mocharc",
+    "lesson05/exercise00/script": "babel-node lesson05/exercise00/index.js",
+    "lesson05/exercise00/tests": "mocha lesson05/exercise00/*.spec.js --opts .mocharc"
   },
   "repository": {
     "type": "git",
@@ -42,5 +44,8 @@
     "mocha": "3.2.0",
     "tslint": "4.4.2",
     "typescript": "2.1.5"
+  },
+  "devDependencies": {
+    "@types/chai": "3.4.34"
   }
 }
