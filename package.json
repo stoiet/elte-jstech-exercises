@@ -22,7 +22,8 @@
     "lesson05/exercise02/tests": "mocha lesson05/exercise02/*.spec.js --opts .mocharc",
     "lesson05/exercise03/script": "babel-node lesson05/exercise03/index.js",
     "lesson05/exercise04/script": "babel-node lesson05/exercise04/index.js",
-    "lesson05/exercise04/tests": "mocha lesson05/exercise04/*.spec.js --opts .mocharc"
+    "lesson05/exercise04/tests": "mocha lesson05/exercise04/*.spec.js --opts .mocharc",
+    "lesson05/exercise05/script": "babel-node lesson05/exercise05/index.js"
   },
   "repository": {
     "type": "git",
