@@ -16,7 +16,11 @@
     "lesson03/exercise04/script": "babel-node lesson03/exercise04/index.js",
     "lesson03/exercise04/tests": "mocha lesson03/exercise04/*.js --opts .mocharc",
     "lesson05/exercise00/script": "babel-node lesson05/exercise00/index.js",
-    "lesson05/exercise00/tests": "mocha lesson05/exercise00/*.spec.js --opts .mocharc"
+    "lesson05/exercise00/tests": "mocha lesson05/exercise00/*.spec.js --opts .mocharc",
+    "lesson05/exercise01/script": "babel-node lesson05/exercise01/index.js",
+    "lesson05/exercise02/script": "babel-node lesson05/exercise02/index.js",
+    "lesson05/exercise02/tests": "mocha lesson05/exercise02/*.spec.js --opts .mocharc",
+    "lesson05/exercise03/script": "babel-node lesson05/exercise03/index.js"
   },
   "repository": {
     "type": "git",
@@ -42,10 +46,14 @@
     "chalk": "1.1.3",
     "koa": "1.2.4",
     "mocha": "3.2.0",
+    "ramda": "0.23.0",
     "tslint": "4.4.2",
-    "typescript": "2.1.5"
+    "typescript": "2.1.5",
+    "uuid": "3.0.1"
   },
   "devDependencies": {
-    "@types/chai": "3.4.34"
+    "@types/chai": "3.4.34",
+    "@types/ramda": "0.0.4",
+    "@types/uuid": "2.0.29"
   }
 }
