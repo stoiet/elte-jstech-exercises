@@ -20,7 +20,9 @@
     "lesson05/exercise01/script": "babel-node lesson05/exercise01/index.js",
     "lesson05/exercise02/script": "babel-node lesson05/exercise02/index.js",
     "lesson05/exercise02/tests": "mocha lesson05/exercise02/*.spec.js --opts .mocharc",
-    "lesson05/exercise03/script": "babel-node lesson05/exercise03/index.js"
+    "lesson05/exercise03/script": "babel-node lesson05/exercise03/index.js",
+    "lesson05/exercise04/script": "babel-node lesson05/exercise04/index.js",
+    "lesson05/exercise04/tests": "mocha lesson05/exercise04/*.spec.js --opts .mocharc"
   },
   "repository": {
     "type": "git",
@@ -44,6 +46,7 @@
     "babel-preset-latest": "6.22.0",
     "chai": "3.5.0",
     "chalk": "1.1.3",
+    "co": "4.6.0",
     "koa": "1.2.4",
     "mocha": "3.2.0",
     "ramda": "0.23.0",
