@@ -19,21 +19,21 @@ import { syncStatement, slowStatement, asyncStatement } from './statements';
 
 
 
-// syncStatement(() => console.log('first'));
-// syncStatement(() => console.log('second'));
-// syncStatement(() => console.log('third'));
+syncStatement(() => console.log('first'));
+syncStatement(() => console.log('second'));
+syncStatement(() => console.log('third'));
 
 
-// asyncStatement(() => console.log('firstAsync'));
-// asyncStatement(() => console.log('secondAsync'));
-// asyncStatement(() => console.log('thirdAsync'));
+asyncStatement(() => console.log('firstAsync'));
+asyncStatement(() => console.log('secondAsync'));
+asyncStatement(() => console.log('thirdAsync'));
 
 
-// asyncStatement(() => {
-//   console.log('firstAsync');
-//   asyncStatement(() => {
-//     console.log('secondAsync');
-//     asyncStatement(() => console.log('thirdAsync'));
-//   });
-// });
+asyncStatement(() => {
+  console.log('firstAsync');
+  asyncStatement(() => {
+    console.log('secondAsync');
+    asyncStatement(() => console.log('thirdAsync'));
+  });
+});
 

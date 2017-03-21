@@ -6,15 +6,15 @@ import { syncStatement, slowStatement, asyncStatement } from './statements';
 // syncStatement(() => console.log('third'));
 
 
-// const firstPromise = asyncStatement(() => console.log('firstAsync'));
-// const secondPromise = asyncStatement(() => console.log('secondAsync'));
-// const thirdPromise = asyncStatement(() => console.log('thirdAsync'));
+const firstPromise = asyncStatement(() => console.log('firstAsync'));
+const secondPromise = asyncStatement(() => console.log('secondAsync'));
+const thirdPromise = asyncStatement(() => console.log('thirdAsync'));
 
 
-// Promise
-//   .all([firstPromise, secondPromise, thirdPromise])
-//   .then(() => {
-//     return asyncStatement(() => console.log('firstAsync'))
-//       .then(() => asyncStatement(() => console.log('secondAsync')))
-//       .then(() => asyncStatement(() => console.log('thirdAsync')));
-//   });
+Promise
+  .all([firstPromise, secondPromise, thirdPromise])
+  .then(() => {
+    return asyncStatement(() => console.log('firstAsync'))
+      .then(() => asyncStatement(() => console.log('secondAsync')))
+      .then(() => asyncStatement(() => console.log('thirdAsync')));
+  });
