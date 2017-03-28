@@ -6,6 +6,8 @@
     "repl": "node repl/index.js",
     "homework/01": "webpack --config homework/01/webpack.config.babel.js",
     "homework/01/watch": "webpack --config homework/01/webpack.config.babel.js --watch",
+    "homework/02": "webpack --config homework/02/webpack.config.babel.js",
+    "homework/02/watch": "webpack --config homework/02/webpack.config.babel.js --watch",
     "lesson01/exercise01": "mocha lesson01/exercise01/*.js --opts .mocharc",
     "lesson02/exercise01/tests": "mocha lesson02/exercise01/*.js --opts .mocharc",
     "lesson02/exercise01/script": "babel-node lesson02/exercise01/index.js",
