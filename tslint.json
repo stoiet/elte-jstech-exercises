@@ -23,7 +23,6 @@
     "indent": [true, "spaces"],
     "max-classes-per-file": [true, 1],
     "max-line-length": [true, 120],
-    "no-default-export": true,
     "no-trailing-whitespace": true,
     "object-literal-sort-keys": true,
     "prefer-const": true,
