@@ -8,6 +8,8 @@
     "homework/01/watch": "webpack --config homework/01/webpack.config.babel.js --watch",
     "homework/02": "webpack --config homework/02/webpack.config.babel.js",
     "homework/02/watch": "webpack --config homework/02/webpack.config.babel.js --watch",
+    "homework/03": "webpack --config homework/03/webpack.config.babel.js",
+    "homework/03/watch": "webpack --config homework/03/webpack.config.babel.js --watch",
     "lesson01/exercise01": "mocha lesson01/exercise01/*.js --opts .mocharc",
     "lesson02/exercise01/tests": "mocha lesson02/exercise01/*.js --opts .mocharc",
     "lesson02/exercise01/script": "babel-node lesson02/exercise01/index.js",
@@ -29,7 +31,9 @@
     "lesson05/exercise04/tests": "mocha lesson05/exercise04/*.spec.js --opts .mocharc",
     "lesson05/exercise05/script": "babel-node lesson05/exercise05/index.js",
     "lesson06/exercise01/build": "webpack --config lesson06/exercise01/webpack.config.js",
-    "lesson06/exercise01/watch": "webpack --config lesson06/exercise01/webpack.config.js --watch"
+    "lesson06/exercise01/watch": "webpack --config lesson06/exercise01/webpack.config.js --watch",
+    "lesson07/build": "webpack --config lesson07/webpack.config.babel.js",
+    "lesson07/watch": "webpack --config lesson07/webpack.config.babel.js --watch"
   },
   "repository": {
     "type": "git",
@@ -52,6 +56,8 @@
     "chai": "3.5.0",
     "chalk": "1.1.3",
     "co": "4.6.0",
+    "css-loader": "0.27.3",
+    "extract-text-webpack-plugin": "2.1.0",
     "koa": "2.2.0",
     "lodash": "4.17.4",
     "mocha": "3.2.0",
