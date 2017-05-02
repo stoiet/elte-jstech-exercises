@@ -6,7 +6,7 @@ export default [{
   context: resolve(__dirname, './'),
   entry: {
     application: resolve(__dirname, './bootstrap.js'),
-    vendors: ['babel-polyfill', 'react', 'react-dom', 'lodash', 'ramda', 'redux', 'react-redux']
+    vendors: ['babel-polyfill', 'lodash', 'ramda']
   },
   output: {
     filename: '[name].bundle.js',

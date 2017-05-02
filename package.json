@@ -34,6 +34,8 @@
     "lesson05/exercise05/script": "babel-node lesson05/exercise05/index.js",
     "lesson06/exercise01/build": "webpack --config lesson06/exercise01/webpack.config.js",
     "lesson06/exercise01/watch": "webpack --config lesson06/exercise01/webpack.config.js --watch",
+    "lesson08/build": "webpack --config lesson08/webpack.config.babel.js",
+    "lesson08/watch": "webpack --config lesson08/webpack.config.babel.js --watch",
     "lesson07/build": "webpack --config lesson07/webpack.config.babel.js",
     "lesson07/watch": "webpack --config lesson07/webpack.config.babel.js --watch"
   },
