@@ -21,3 +21,5 @@ render(
     <Application />
   </Provider>
 , document.getElementById('application'));
+
+console.log('asd');
