@@ -6,7 +6,7 @@ export default [{
   context: resolve(__dirname, './'),
   entry: {
     application: resolve(__dirname, './bootstrap.js'),
-    vendors: ['babel-polyfill', 'lodash', 'ramda']
+    vendors: ['babel-polyfill', 'lodash', 'ramda', 'angular']
   },
   output: {
     filename: '[name].bundle.js',
@@ -18,7 +18,8 @@ export default [{
   module: {
     rules: [
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/, enforce: 'pre' },
-      { test: /\.css$/, use: ExtractTextPlugin.extract({ use: 'css-loader' }), exclude: /node_modules/ }
+      { test: /\.css$/, use: ExtractTextPlugin.extract({ use: 'css-loader' }), exclude: /node_modules/ },
+      { test: /\.html$/, loader: 'html-loader', exclude: /node_modules/ }
     ]
   },
   target: 'web',
