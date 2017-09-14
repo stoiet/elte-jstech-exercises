@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "ELTE JavaScript Technologies Exercises",
   "scripts": {
+    "initialize": "git stash -u && git pull --rebase && npm prune && npm dedup && npm cache clean && npm install",
     "repl": "node repl/index.js",
     "homework/01": "webpack --config homework/01/webpack.config.babel.js",
     "homework/01/watch": "webpack --config homework/01/webpack.config.babel.js --watch",

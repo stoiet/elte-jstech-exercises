@@ -1,14 +1,16 @@
 # **ELTE - JavaScript Technologiak**
 
+#### Projekt inicializalasa
 ```bash
-nvm use
-npm install
+npm run initialize
+```
 
-npm run exercise00
-npm run exercise01
-npm run exercise02
-npm run exercise03
-npm run exercise04
+#### Elvesztek a modositasaim, mi a teendo?
+```bash
+git stash pop
+```
 
-npm run example -- examples/*
+#### REPL hasznalata
+```bash
+npm run repl
 ```
