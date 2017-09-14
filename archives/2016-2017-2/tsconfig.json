@@ -1,0 +1,17 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "forceConsistentCasingInFileNames": false,
+    "lib": ["es2016", "dom"],
+    "module": "none",
+    "noEmit": true,
+    "noEmitHelpers": true,
+    "strictNullChecks": true,
+    "target": "es6"
+  },
+  "include": ["**/*.js"],
+  "exclude": ["node_modules"]
+}
