@@ -17,5 +17,5 @@ Egyszerre mindig csak egy teszt fog torni, amennyiben a feladat megoldasa meg ne
 
 ### Tesztek futtatasa:
 ```bash
-npm run lession01/exercise01
+npm run lesson01/exercise01
 ```
