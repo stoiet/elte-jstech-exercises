@@ -9,6 +9,7 @@
     "lesson01/exercise02/script": "babel-node lesson01/exercise02/index.js",
     "lesson02/exercise01": "mocha lesson02/exercise01/*.js --opts .mocharc",
     "lesson02/exercise02": "mocha lesson02/exercise02/*.js --opts .mocharc",
+    "lesson02/exercise03": "mocha lesson02/exercise03/*.js --opts .mocharc",
     "repl": "node repl/index.js"
   },
   "repository": {
