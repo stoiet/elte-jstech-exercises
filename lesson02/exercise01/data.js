@@ -1,5 +1,6 @@
+const freeze = require('deep-freeze-node');
 
-export const data = [
+export const data = freeze([
 {
   name: 'Peter',
   favouriteFoods: [
@@ -32,4 +33,4 @@ export const data = [
     { name: 'ice-cream', nice: 6 }
   ]
 }
-];
+]);
