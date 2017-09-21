@@ -6,7 +6,8 @@
     "initialize": "git stash -u && git pull --rebase && npm prune && npm dedup && npm cache verify && npm install",
     "lesson01/exercise01": "mocha lesson01/exercise01/*.js --opts .mocharc",
     "lesson01/exercise02": "mocha lesson01/exercise02/*.js --opts .mocharc",
-    "lesson02/exercise02/script": "babel-node lesson01/exercise02/index.js",
+    "lesson01/exercise02/script": "babel-node lesson01/exercise02/index.js",
+    "lesson02/exercise01": "mocha lesson02/exercise01/*.js --opts .mocharc",
     "repl": "node repl/index.js"
   },
   "repository": {
@@ -52,6 +53,7 @@
     "chai": "4.1.2",
     "chalk": "2.1.0",
     "css-loader": "0.28.7",
+    "deep-freeze-node": "1.1.3",
     "extract-text-webpack-plugin": "3.0.0",
     "html-loader": "0.5.1",
     "mocha": "3.5.3",
