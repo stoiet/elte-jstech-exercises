@@ -10,6 +10,10 @@
     "lesson02/exercise01": "mocha lesson02/exercise01/*.js --opts .mocharc",
     "lesson02/exercise02": "mocha lesson02/exercise02/*.js --opts .mocharc",
     "lesson02/exercise03": "mocha lesson02/exercise03/*.js --opts .mocharc",
+    "lesson03/exercise01": "mocha lesson03/exercise01/*.js --opts .mocharc",
+    "lesson03/exercise01/script": "babel-node lesson03/exercise01/index.js",
+    "lesson03/exercise02/script": "babel-node lesson03/exercise02/index.js",
+    "lesson03/exercise03/script": "babel-node lesson03/exercise03/index.js",
     "repl": "node repl/index.js"
   },
   "repository": {
