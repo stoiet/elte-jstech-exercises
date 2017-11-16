@@ -8,12 +8,8 @@ Irj egy olyan scriptet, amely:
 
 Hasznald a library.js fajlban talalhato segedfuggvenyeket, figyelj a fuggvenyek szignaturajara es helyes hasznalatara!
 
-### Tesztek futtatasa:
-```bash
-npm run lesson05/exercise05/tests
-```
 
 ### Script futtatasa:
 ```bash
-npm run lesson05/exercise05/script
+npm run lesson05/exercise01/script
 ```
