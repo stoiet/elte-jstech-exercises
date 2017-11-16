@@ -5,7 +5,7 @@
     "code-style": "tslint --config ./tslint.json --format stylish --project ./tsconfig.json",
     "initialize": "npm doctor && npm prune && npm cache verify && npm dedupe && npm install",
     "build": "rm -rf dist && webpack",
-    "build:ts": "rm -rf dist && tsc --project ./tsconfig.json"
+    "build:watch": "rm -rf dist && webpack -w"
   },
   "private": true,
   "license": "MIT",

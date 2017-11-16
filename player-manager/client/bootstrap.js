@@ -3,4 +3,7 @@ import { render } from 'react-dom';
 import * as React from 'react';
 import 'core-js/shim';
 
-render(<ApplicationComponent />, document.getElementById('application'));
+render(
+  <ApplicationComponent players={ window.config.players }/>,
+  document.getElementById('application'),
+);
