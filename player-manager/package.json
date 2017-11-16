@@ -4,7 +4,8 @@
   "scripts": {
     "code-style": "tslint --config ./tslint.json --format stylish --project ./tsconfig.json",
     "initialize": "npm doctor && npm prune && npm cache verify && npm dedupe && npm install",
-    "start": "rm -rf dist && tsc --project ./tsconfig.json"
+    "build": "rm -rf dist && webpack",
+    "build:ts": "rm -rf dist && tsc --project ./tsconfig.json"
   },
   "private": true,
   "license": "MIT",
@@ -14,15 +15,22 @@
     "npm": "5.5.1"
   },
   "dependencies": {
+    "core-js": "2.5.1",
     "react": "16.1.1",
     "react-dom": "16.1.1",
     "tslib": "1.8.0"
   },
   "devDependencies": {
+    "@types/core-js": "0.9.43",
     "@types/node": "8.0.49",
     "@types/react": "16.0.23",
     "@types/react-dom": "16.0.3",
     "@types/webpack": "3.8.1",
+    "babel-core": "6.26.0",
+    "babel-loader": "7.1.2",
+    "babel-preset-latest": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "ts-loader": "3.1.1",
     "tslint": "5.8.0",
     "typescript": "2.6.1",
     "webpack": "3.8.1"
