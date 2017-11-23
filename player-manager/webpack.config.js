@@ -22,6 +22,8 @@ const config = {
         test: /\.js$/,
         loaders: 'babel-loader',
         exclude: /node_modules/,
+        enforce: 'pre',
+        options: { babelrc: true, cacheDirectory: true },
       },
     ],
   },
