@@ -6,7 +6,7 @@ const config = {
   context: __dirname,
   entry: {
     application: './client/bootstrap.js',
-    vendors: ['react', 'react-dom', 'tslib', 'core-js'],
+    vendors: ['react', 'react-dom', 'prop-types', 'core-js', 'regenerator-runtime'],
   },
   devtool: 'source-map',
   resolve: { extensions: ['.js', '.json', '.ts', '.tsx'] },
