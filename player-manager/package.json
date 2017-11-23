@@ -5,6 +5,7 @@
     "code-style": "tslint --config ./tslint.json --format stylish --project ./tsconfig.json",
     "initialize": "npm doctor && npm prune && npm cache verify && npm dedupe && npm install",
     "build:ts": "rm -rf dist && tsc --project ./tsconfig.json",
+    "build:js": "rm -rf dist && babel ./client --out-dir ./dist --ignore spec.js",
     "build": "rm -rf dist && webpack",
     "build:watch": "rm -rf dist && webpack -w"
   },
@@ -29,7 +30,7 @@
     "@types/react": "16.0.23",
     "@types/react-dom": "16.0.3",
     "@types/webpack": "3.8.1",
-    "babel-core": "6.26.0",
+    "babel-cli": "6.26.0",
     "babel-loader": "7.1.2",
     "babel-preset-latest": "6.24.1",
     "babel-preset-react": "6.24.1",
