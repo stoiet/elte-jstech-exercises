@@ -1,4 +1,5 @@
 {
   "presets": ["latest", "react"],
-  "comments": false
+  "comments": false,
+  "filename": "./babel.errors"
 }
