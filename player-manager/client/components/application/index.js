@@ -16,7 +16,6 @@ export class ApplicationComponent extends React.Component {
   }
 
   render() {
-    console.info(this.props);
     return (
       <div>
         <h2>{ 'Player Manager' }</h2>
@@ -25,7 +24,6 @@ export class ApplicationComponent extends React.Component {
       </div>
     );
   }
-
 
   getPlayer(playerId) {
     return this.state.players.find(({ id }) => id === parseInt(playerId));
