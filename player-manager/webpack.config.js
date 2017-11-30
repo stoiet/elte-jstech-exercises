@@ -2,6 +2,7 @@
 
 const { resolve } = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 
 const config = {
@@ -51,7 +52,12 @@ const config = {
   resolve: { modules: [resolve(__dirname, './node_modules')] },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({ name: ['vendors'] }),
-    new ExtractTextPlugin('application.css')
+    new ExtractTextPlugin('application.css'),
+    new CopyWebpackPlugin([{
+      context: resolve(__dirname, './'),
+      from: './client/index.html',
+      to: './index.html',
+    }])
   ],
   devtool: 'source-map',
   target: 'web',
