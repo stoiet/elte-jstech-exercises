@@ -60,6 +60,11 @@ const config = {
     ignored: /node_modules/,
     poll: 1000,
   },
+  devServer: {
+    contentBase: resolve(__dirname, './dist'),
+    compress: false,
+    port: 9000
+  }
 };
 
 module.exports = config;
