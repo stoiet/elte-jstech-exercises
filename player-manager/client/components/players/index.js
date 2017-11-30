@@ -37,6 +37,7 @@ export class PlayersComponent extends React.Component {
         id={ id }
         name={ name }
         status={ status }
+        onEdit={ id => this._handleEdit(id) }
         onDelete={ id => this._handleDelete(id) }
       />
     ));
@@ -46,6 +47,10 @@ export class PlayersComponent extends React.Component {
   _handleDelete(playerId) {
     const players = this.state.players.filter(({ id }) => id !== playerId);
     this.setState({ players });
+  }
+
+
+  _handleEdit(playerId) {
   }
 
 }
