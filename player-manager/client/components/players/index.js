@@ -1,4 +1,5 @@
 import { PlayerComponent } from '../../components';
+import * as PropTypes from 'prop-types';
 import * as React from 'react';
 
 export class PlayersComponent extends React.Component {
@@ -51,6 +52,11 @@ export class PlayersComponent extends React.Component {
 
 
   _handleEdit(playerId) {
+    this.context.history.push(`/edit/${playerId}`);
   }
 
 }
+
+PlayersComponent.contextTypes = {
+  history: PropTypes.object
+};

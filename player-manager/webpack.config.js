@@ -15,6 +15,7 @@ const config = {
       'prop-types',
       'core-js',
       'regenerator-runtime',
+      'react-router-dom',
       'jquery'
     ],
   },
