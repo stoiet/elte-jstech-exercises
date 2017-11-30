@@ -1,5 +1,6 @@
 import { PlayersComponent } from '../../components';
 import * as React from 'react';
+import './index.css';
 
 export class ApplicationComponent extends React.Component {
 
