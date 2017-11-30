@@ -6,6 +6,11 @@ import './index.css';
 
 export class ApplicationComponent extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.state = { players: props.players };
+  }
+
   getChildContext() {
     return { history: this.props.history };
   }
@@ -15,10 +20,15 @@ export class ApplicationComponent extends React.Component {
     return (
       <div>
         <h2>{ 'Player Manager' }</h2>
-        <Route path={ '/' } exact render={ () => <PlayersComponent players={ this.props.players } /> } />
-        <Route path={ '/edit/:id' } exact render={ ({ match }) => <PlayerEditComponent id={ match.params.id } /> } />
+        <Route path={ '/' } exact render={ () => <PlayersComponent players={ this.state.players } onChange={ ({ players }) => this.setState({ players }) } /> } />
+        <Route path={ '/edit/:id' } exact render={ ({ match }) => <PlayerEditComponent player={ this.getPlayer(match.params.id) } /> } />
       </div>
     );
+  }
+
+
+  getPlayer(playerId) {
+    return this.state.players.find(({ id }) => id === parseInt(playerId));
   }
 
 }

@@ -4,7 +4,7 @@ export class PlayerEditComponent extends React.Component {
 
   render() {
     return (
-      <span>{ this.props.id }</span>
+      <span>{ this.props.player.name }</span>
     );
   }
 
