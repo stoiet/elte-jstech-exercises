@@ -1,13 +1,21 @@
 'use strict';
 
 const { resolve } = require('path');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const webpack = require('webpack');
 
 const config = {
   context: resolve(__dirname, './'),
   entry: {
     application: './client/bootstrap.js',
-    vendors: ['react', 'react-dom', 'prop-types', 'core-js', 'regenerator-runtime'],
+    vendors: [
+      'react',
+      'react-dom',
+      'prop-types',
+      'core-js',
+      'regenerator-runtime',
+      'jquery'
+    ],
   },
   output: {
     filename: '[name].js',
@@ -25,11 +33,25 @@ const config = {
         enforce: 'pre',
         options: { babelrc: true, cacheDirectory: true },
       },
+      {
+        test: /jquery/,
+        loaders: 'expose-loader',
+        options: 'jQuery',
+      },
+      {
+        test: /.css$/,
+        loaders: ExtractTextPlugin.extract({ use: 'css-loader' })
+      },
+      {
+        test: /\.woff2?$|\.ttf$|\.eot$|\.svg/,
+        loaders: 'file-loader'
+      }
     ],
   },
   resolve: { modules: [resolve(__dirname, './node_modules')] },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({ name: ['vendors'] }),
+    new ExtractTextPlugin('application.css')
   ],
   devtool: 'source-map',
   target: 'web',
