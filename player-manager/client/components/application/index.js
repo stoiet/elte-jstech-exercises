@@ -1,4 +1,4 @@
-import { PlayersComponent } from '../../components';
+import { PlayersComponent, PlayerEditComponent } from '../../components';
 import { Route } from 'react-router-dom';
 import * as PropTypes from 'prop-types';
 import * as React from 'react';
@@ -15,7 +15,8 @@ export class ApplicationComponent extends React.Component {
     return (
       <div>
         <h2>{ 'Player Manager' }</h2>
-        <Route path="/" render={ () => <PlayersComponent players={ this.props.players } /> } />
+        <Route path={ '/' } exact render={ () => <PlayersComponent players={ this.props.players } /> } />
+        <Route path={ '/edit/:id' } exact render={ ({ match }) => <PlayerEditComponent id={ match.params.id } /> } />
       </div>
     );
   }
